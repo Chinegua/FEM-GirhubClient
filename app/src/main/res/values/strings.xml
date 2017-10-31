@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FEM-GithubClient</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="viewOnGithub">Ver en github</string>
+
+
+</resources>

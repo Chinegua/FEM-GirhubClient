@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chinegua.fem_githubclient.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/searchUser"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.93" />
+
+        <Button
+            android:id="@+id/makeSearch"
+            android:text="@string/buscar"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:onClick="filtrar"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="161dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="User"/>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/ly2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_bookmark_black_24dp"/>
+
+        <TextView
+            android:id="@+id/repositorios"
+            android:layout_width="152dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_redo_black_24dp"/>
+
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="66dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_undo_black_24dp"/>
+
+        <TextView
+            android:id="@+id/follower"
+            android:layout_width="108dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:id="@+id/ly4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button"
+        android:text="@string/viewOnGithub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goTo"
+
+        />
+    </LinearLayout>
+
+
+</LinearLayout>
